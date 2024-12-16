@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Trabajador</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1><b>SELECCIÓN DE TRABAJADOR</b></h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Horario.html">Horario</a></li>
+            <li><a href="Imatges.html">Galeria de imágenes</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <form>
+            <section id="Datos">
+                <fieldset>
+                    <legend>Datos personales</legend>
+        
+                    <label for="nom">Nombre</label><br>
+                    <input type="text" id="nom" name="nombre" placeholder="Introduzca su nombre." required><br>
+                    
+                    <label for="Apellidos">Apellidos</label><br>
+                    <input type="text" id="Apellidos" name="Apellidos" placeholder="Introduzca sus apellidos." required><br>
+    
+                    <label for="fecha">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha" name="fecha_nacimiento" required><br>
+                   
+                    <label for="DNI">DNI</label><br>
+                    <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI." required><br>
+                   
+                    <label for="Color">Color favorito</label><br>
+                    <input type="text" id="Color" name="Color" placeholder="Introduzca su color favorito."><br>
+                    
+                    
+                    <label for="Email">Email</label><br>
+                    <input type="email" id="Email" name="Email" placeholder="Introduzca su email." required><br>
+    
+                    <label>Sexo</label><br>
+                    <input type="radio" name="sexo">Hombre<br>
+                    <input type="radio" name="sexo">Mujer<br>
+    
+                    <label for="estudios">Estudios</label><br>
+                    <select name="estudios" id="estudios"><br>
+                        <optgroup label="Ciencias Sociales">
+                            <option value="psicologia">Psicología</option>
+                            <option value="sociologia">Sociología</option>
+                            <option value="antropologia">Antropología</option>
+                            <option value="economia">Economía</option>
+                        </optgroup>
+                          
+                        <optgroup label="Ciencias Naturales">
+                            <option value="biologia">Biología</option>
+                            <option value="quimica">Química</option>
+                            <option value="fisica">Física</option>
+                            <option value="geologia">Geología</option>
+                        </optgroup>
+                          
+                        <optgroup label="Ingeniería">
+                            <option value="informatica">Ingeniería Informática</option>
+                            <option value="civil">Ingeniería Civil</option>
+                            <option value="electrica">Ingeniería Eléctrica</option>
+                            <option value="industrial">Ingeniería Industrial</option>
+                        </optgroup>
+                          
+                        <optgroup label="Arte y Humanidades">
+                            <option value="literatura">Literatura</option>
+                            <option value="historia">Historia</option>
+                            <option value="filosofia">Filosofía</option>
+                            <option value="musica">Música</option>
+                        </optgroup>
+                          
+                        <optgroup label="Ciencias de la Salud">
+                            <option value="medicina">Medicina</option>
+                            <option value="enfermeria">Enfermería</option>
+                            <option value="odontologia">Odontología</option>
+                            <option value="farmacia">Farmacia</option>
+                        </optgroup>
+                          
+                        <optgroup label="Negocios y Administración">
+                            <option value="administracion">Administración de Empresas</option>
+                            <option value="contabilidad">Contabilidad</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="finanzas">Finanzas</option>
+                        </optgroup>
+                        <option value="otro">Otro</option>
+                    </select>
+                </fieldset>
+            </section>
+            <section id="mas">
+                <fieldset>
+                    <legend>Datos adicionales</legend>
+
+                    <label for="explicacion">Explicación</label><br>
+                    <textarea id="explicacion" name="explicacion" rows="10" cols="50" placeholder="Haz una breve explicación sobre porque deberíamos escogerte." required></textarea><br>
+
+                    <label for="foto">Selecciona una fotografía:</label><br>
+                    <input type="file" id="foto" name="foto" accept="image/*" required><br>
+                    <p>Por favor, selecciona un archivo de imagen (JPG, PNG).</p>
+                </fieldset>
+            </section>
+            <section id="politica">
+                <fieldset>
+                    <legend>Politica de privacidad de la empresa</legend>
+                    
+                    <label>
+                        <input type="checkbox" id="Politica" name="politica_privacidad" required>
+                        <p>He leído y acepto la política de privacidad.</p>
+                    </label>
+                    
+                </fieldset>
+            </section>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+</body>
+<footer>
+    <p>Cristian Manchón WEB 2024 &copy;</p>
+</footer>
+</html>
